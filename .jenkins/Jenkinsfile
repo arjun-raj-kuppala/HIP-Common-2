@@ -1,3 +1,7 @@
+// Fetch the docker base image as a build parameter 
+properties([buildDiscarder(parameters([string( name: 'DOCKER_BASE_IMAGE', defaultValue: false, description: 'GIT URL FOR HIP PROJECT' )])
+    ])
+
 def hipBuildTest(String backendLabel) {
         node(backendLabel) {
           stage("Source sync ${backendLabel}") {
