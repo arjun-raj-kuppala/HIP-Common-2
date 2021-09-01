@@ -1,5 +1,6 @@
 // Fetch the docker base image as a build parameter 
 properties([parameters([string( name: 'DOCKER_BASE_IMAGE', defaultValue: 'false', description: 'docker base image used to build' )])
+   ])
 
 def hipBuildTest(String backendLabel) {
         node(backendLabel) {
