@@ -157,3 +157,4 @@ The README with the procedures and tips the team used during this porting effort
 Use the [GitHub issue tracker](https://github.com/ROCm-Developer-Tools/HIP/issues).
 If reporting a bug, include the output of "hipconfig --full" and samples/1_hipInfo/hipInfo (if possible).
 
+test
